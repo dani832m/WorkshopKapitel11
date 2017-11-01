@@ -1,4 +1,5 @@
-///OBS! Denne klasse kan ikke køres, da den ikke indeholder nogen main(), men kodeeksemplerne burde være korrekte.
+///// OBS! Denne klasse kan ikke køres, da den ikke indeholder nogen main(), men kodeeksemplerne burde være korrekte.
+///// Kodeeksemplerne er taget ud af kontekst, og kan ikke altid stå alene /////
 
 /*
 Hvad er en superclass og subclass i Java?
@@ -22,7 +23,7 @@ class Super { //Superclass eller parent til "Sub"
 }
 
 class Sub extends Super { //Subclass som extender superclass'en "Super"
-    //Arver egenskaber fra "Super"
+    //Arver egenskaber og metoder fra "Super"
 }
 
 /*
@@ -133,7 +134,8 @@ normalt ikke specielt brugbart. Derfor kan man blive nødt til at override toStr
 */
 
 public String toString() {
-    return "Frugten har " + antalKerner + " kerner og er " + age + " dage gammel.";
+    String infoString = "Frugten har " + antalKerner + " kerner og er " + age + " dage gammel.";
+    return infoString;
 }
 
 // Lærebogen beskriver toString-metoden: "The toString() method returns a string representation of the object."
