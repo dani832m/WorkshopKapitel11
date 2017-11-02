@@ -22,10 +22,15 @@ public class Banan extends Frugt { //Klassen "Banan" er subklasse til superklass
         System.out.println(banan1 instanceof Frugt); //Ja, "banan1" er en instans af klassen "Frugt"
         System.out.println(banan1 instanceof Banan); //Ja, "banan1" er også en instans af klassen "Banan"
         System.out.println(banan1 instanceof Object); //Ja, "banan1" er også en instans af klassen "Object"
-        // System.out.println(banan1 instanceof Bil); //Nej! "banan" er IKKE en instans af klassen "Bil" (error)
+        //System.out.println(banan1 instanceof Bil); //Nej! "banan" er IKKE en instans af klassen "Bil" (error)
 
         //Brug af equals-metoden
-        //Kommer....
+
+        Bil bil1 = new Bil(); //Opretter et objekt i klassen "Bil" for at sammenligne herunder
+
+        //Vi bruger equals til at teste, om to objekter er ens
+        System.out.println(banan1.equals(banan2)); //Ja, "banan1" er lig "banan2" (true)
+        System.out.println(banan1.equals(bil1)); //Nej, "banan1" er IKKE lig "bil1" (false)
 
     }
 

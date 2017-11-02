@@ -1,4 +1,4 @@
-public class Sprint2 {
+public class Sprint2 { //Fjern evt. klassen "Sprint1", så kan resten af klasserne køre uden problemer
 
     /*
     SPG: Hvad er polymorfi i Java?
@@ -51,9 +51,20 @@ public class Sprint2 {
 
     SPG: Hvad kan klassen ArrayList bruges til?
 
+    Klassen "ArrayList" kan bruges til at gemme en liste af objekter. Modsat et almindeligt array, så kan man med
+    "ArrayList" ændre i det hen ad vejen. Et almindeligt array er som bekendt "fixed", og størrelsen kan ikke ændres,
+    når det først er kreeret.
+
+    Måden hvorpå man opretter et array i klassen "ArrayList" er:
+    ArrayList<Datatype> variabelnavn = new ArrayList<Datatype>();
+
+    Se eksempel i klassen "ShowingArrayList".
+
     ____________________________________________________________________________________________________________________
 
-    SPG: Du kan forhindre overriding og extending ved at skrive final foran dine klasser og/eller din metoder. Vis det.
+    SPG: Du kan forhindre overriding og extending ved at skrive final foran dine klasser og/eller din metoder.
+
+    Se eksempel i klassen "ShowingFinal".
 
     */
 
